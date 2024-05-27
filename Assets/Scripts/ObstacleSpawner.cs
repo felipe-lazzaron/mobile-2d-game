@@ -19,12 +19,12 @@ public class ObstacleSpawner : MonoBehaviour
         StartSpawning();
     }
 
-    void Spawn()
+    public void Spawn()
     {
         float randomX = Random.Range(-maxXpos, maxXpos);
         Vector2 spawnPos = new Vector2(randomX, transform.position.y);
 
-        // Gera um número aleatório entre 0 e 1
+        // Gera um nï¿½mero aleatï¿½rio entre 0 e 1
         float randomValue = Random.Range(0f, 1f);
 
         // Decide qual prefab instanciar com base na chance definida
@@ -33,7 +33,7 @@ public class ObstacleSpawner : MonoBehaviour
         Instantiate(selectedObstacle, spawnPos, Quaternion.identity);
     }
 
-    void StartSpawning()
+    public void StartSpawning()
     {
         InvokeRepeating("Spawn", 1f, spawnRate);
     }

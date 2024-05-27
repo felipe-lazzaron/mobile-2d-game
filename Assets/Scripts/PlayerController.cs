@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D rb;
+    public Rigidbody2D rb;
     public Animator animator;
     public float moveSpeed;
-    SpriteRenderer sp;
+    public SpriteRenderer sp;
+
+    private bool isDead = false;
 
     void Awake()
     {
@@ -15,13 +17,12 @@ public class PlayerController : MonoBehaviour
         sp = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+        Debug.Log("PlayerController started.");
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isDead || Time.timeScale == 0) return; // Prevent movement when dead or game is paused
+
         if (Input.GetMouseButton(0))
         {
             if (Input.mousePosition.x < Screen.width / 2)
@@ -54,5 +57,17 @@ public class PlayerController : MonoBehaviour
             rb.velocity = Vector2.zero;
             animator.SetBool("isMoving", false);
         }
+    }
+
+    public void Die()
+    {
+        isDead = true;
+        rb.velocity = Vector2.zero;
+        animator.SetBool("isMoving", false);
+    }
+
+    public void Revive()
+    {
+        isDead = false;
     }
 }
