@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
 
     [Header("Audio Clip")]
     public AudioClip playButton;
+    public AudioClip playPowerUp;
+    public AudioClip playPowerDown;
     public AudioClip backgroundMusicMenu;
     public AudioClip backgroundMusicGame;
     public AudioClip loseSound;

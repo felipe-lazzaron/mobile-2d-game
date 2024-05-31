@@ -23,10 +23,11 @@ public class Obstacle : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Player")
+
+        if (other.tag == "Player" && !GameManager.instance.playerController.isInvincible)
         {
-            GameManager.instance.PauseGame();
             GameManager.instance.GameOver();
+            GameManager.instance.PauseGame();
         }
 
         if (other.tag == "Ground")

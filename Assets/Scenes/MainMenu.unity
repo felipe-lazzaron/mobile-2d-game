@@ -1685,7 +1685,9 @@ MonoBehaviour:
   musicSource: {fileID: 854804432}
   SFXSource: {fileID: 1425964055}
   playButton: {fileID: 8300000, guid: 1e5db7387150d7b458b319a082af13d6, type: 3}
-  backgroundMusicMenu: {fileID: 8300000, guid: b97dc7dd54b573e44b38edb06dc0019d, type: 3}
+  playPowerUp: {fileID: 0}
+  playPowerDown: {fileID: 0}
+  backgroundMusicMenu: {fileID: 8300000, guid: 28c9fc7641e803a4db5c66f7bb0c29d7, type: 3}
   backgroundMusicGame: {fileID: 8300000, guid: f990c60a914dc484386d4d5a5705ce81, type: 3}
   loseSound: {fileID: 8300000, guid: b584b48ea335392498623028fe9da501, type: 3}
 --- !u!1 &1922442876

@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public float moveSpeed;
     public SpriteRenderer sp;
+    public bool isInvincible = false; // Adicionado para controlar a invencibilidade
 
     private bool isDead = false;
 
@@ -19,11 +20,6 @@ public class PlayerController : MonoBehaviour
     }
 
     void Start()
-    {
-        Debug.Log("PlayerController started.");
-    }
-
-    void Update()
     {
         
     }
