@@ -314,7 +314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Endless
+  m_text: Tap Tap
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ee7735d940d8425f88c5ed33a8bdeb9, type: 2}
   m_sharedMaterial: {fileID: -3620197481170030907, guid: 2ee7735d940d8425f88c5ed33a8bdeb9, type: 2}
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dodge
+  m_text: Dash
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2ee7735d940d8425f88c5ed33a8bdeb9, type: 2}
   m_sharedMaterial: {fileID: -3620197481170030907, guid: 2ee7735d940d8425f88c5ed33a8bdeb9, type: 2}
